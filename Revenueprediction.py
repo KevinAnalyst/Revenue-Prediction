@@ -3,6 +3,13 @@ import numpy as np
 import pandas as pd
 import joblib
 
+from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error,r2_score,mean_absolute_error
+
+
 st.title("Revenue Prediction")
 st.subheader("Market have been selling different production to its consumer and a collect some revenue from the sale which results in making profit. Through selling the product the management has able to track all the goods sold in the suparmarket. The main purpose for this analysis is to understand the sales and making predictive model so that management can put measures for maximizing profit in future.")
 
